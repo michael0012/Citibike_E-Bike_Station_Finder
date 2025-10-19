@@ -248,12 +248,9 @@ func getCitiBikeStationsWithAllElectric(numClassicBikes_ int, lat, long float64)
 func PrintCitiBikeStationsWithElectric(numClassicBikes int, lat, long float64, top int) {
 	var freeBikeStations []*StationDataMerged
 	freeBikeStations = getCitiBikeStationsWithAllElectric(numClassicBikes, lat, long)
-	counter := 0
-	for _, freeBikeStation := range freeBikeStations{
-		if counter >= top {
+	for idx, freeBikeStation := range freeBikeStations{
+		if idx == top {
 			break
-		}else{
-			counter++
 		}
 		fmt.Printf("%s | classic bikes remaining: %d, electric bikes: %d\n", freeBikeStation.Name, freeBikeStation.NumBikesAvailable - freeBikeStation.NumEBikesAvailable, freeBikeStation.NumEBikesAvailable)
 	}
