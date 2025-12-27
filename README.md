@@ -15,5 +15,5 @@ There are 4 possible option arguments you can use when running this program. The
 </ul>
 <b>Note: If lat or long are not included with the run command the default longitude and/or latitude of the search is the longitude and/or latitude of Sunset Park in Brooklyn</b><br/>
 <h2>Example:</h2>
-<pre>go run main.go -top 5 -lat 40.64187 -long -74.0021 -bikes 0 </pre>
-This command returns the 5 closest stations with 0 classic/mechanical bikes in the starting search location of 40.64187, -74.0021
+<pre>go run main.go -top 5 -lat 40.647389 -long -74.000917 -bikes 0 </pre>
+This command returns the 5 closest stations with 0 classic/mechanical bikes in the starting search location of 40.647389, -74.000917
